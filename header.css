@@ -1,0 +1,226 @@
+/*
+font-family: roboto,sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: roboto,sans-serif;
+font-weight: 500;
+font-style: normal;
+
+colors: #054B52;
+*/
+
+@import url(reset.css);
+
+html {
+    font-family: roboto,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 62.5%;
+}
+
+header {
+    /*dziecko*/
+    height: 100vh;
+    width: 100vw;
+    
+    background: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #054B52;
+    
+    /*rodzic*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav {
+    /*dziecko*/
+    height: 10vh;
+    padding: 2rem 6rem;
+    
+    /*rodzic*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.content {
+    /*dziecko*/
+    height: 90vh;
+    width: 30vw;
+    padding: 10rem 6rem;
+    
+    /*rodzic*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ul.seasons {
+    /*dziecko*/
+    
+    text-transform: lowercase;
+    
+    /*rodzic*/
+    display: flex;
+}
+
+div.searchbox {
+    /*rodzic*/
+    display: flex;
+    align-items: center;
+    
+    /*dziecko*/
+    height: 1.6rem;
+    
+    margin-left: auto;
+    
+    border-bottom: solid;
+    border-width: 1px;
+    border-bottom-color: #054B52;
+}
+
+ul.menu {
+    /*rodzic*/
+    display: flex;
+}
+
+li {
+    /*dziecko*/
+    margin-left: 2rem;
+}
+
+img.logo {
+    /*dziecko*/
+    margin-right: 2rem;
+}
+
+input.searchbox {
+    /*dziecko*/
+    background: none;
+    border: none;
+    
+    font-family: roboto,sans-serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: #054B52;
+}
+
+button.searchbox {
+    /*dziecko*/
+    background: none;
+    border: none;
+    
+    color: #054B52;
+}
+
+span.menu {
+    /*dziecko*/
+    font-size: 1.6rem;
+}
+
+button.menu {
+    /*dziecko*/
+    background: none;
+    border: none;
+    
+    color: #054B52;
+}
+
+h1 {
+    /*dziecko*/
+    font-size: 6rem;
+    font-weight: 600;
+    
+    margin-bottom: 1.6rem;
+}
+
+p {
+    /*dziecko*/
+    font-weight: 300;
+    line-height: 2rem;
+    
+    margin-bottom: 2rem;
+}
+
+button.content {
+    /*dziecko*/
+    background: none;
+    border: solid;
+    border-width: 1px;
+    border-color: #054B52;
+    
+    width: 20rem;
+    height: 4.5rem;
+    
+    font-family: roboto,sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #054B52;
+    text-transform: lowercase; 
+    
+    flex-shrink: 0;
+}
+
+img.logo-small {display: none;}
+
+@media (max-width: 1052px) {
+    section.content {
+        /*dziecko*/
+        width: 100vw;
+        height: 30vh;
+        
+        margin-top: auto;
+        
+        background: rgba(5, 75, 82, .6);
+        
+        color: #EFCB5B;
+        
+        /*rodzic*/
+        align-items: center;
+    }
+    
+    button.content {
+    /*dziecko*/
+    border-color: #EFCB5B;
+   
+    color: #EFCB5B;
+    }
+    
+    h1 {text-align: center;}
+    p {text-align: center;}
+    ul.seasons {display: none;}
+}
+
+
+@media (max-width: 657px) {
+    input.searchbox {display: none;}
+    div.searchbox {border: none;}
+    button.searchbox {font-size: 1.6rem;}
+    img.logo {display: none;}
+    img.logo-small {display: block;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
